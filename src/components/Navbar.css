@@ -46,14 +46,14 @@
 }
 
 .dropdown-item {
-  color: #cbd5e1 !important;
+  color: #020202 !important;
   padding: 10px 20px;
   font-size: 0.95rem;
 }
 
 .dropdown-item:hover {
   background: #334155;
-  color: #60a5fa !important;
+  color: #0776fe !important;
 }
 
 /***********************
@@ -156,54 +156,6 @@
   background: rgba(0,0,0,0.4);
   z-index: 4000;
 }
-/* Mobile left drawer */
-.mobile-drawer {
-  position: fixed;
-  top: 0;
-  left: -100%;
-  height: 100vh;
-  width: 280px;
-  background-color: white;
-  padding: 2rem 1rem;
-  transition: left 0.4s ease;
-  z-index: 1050;
-  overflow-y: auto;
-}
-.mobile-drawer.open {
-  left: 0;
-}
-
-/* Mobile links */
-.mobile-drawer .nav-link {
-  color: black;
-  font-weight: 500;
-  padding: 0.5rem 0;
-}
-
-.mobile-drawer .nav-link:hover {
-  color: #007bff;
-}
-
-/* Mobile dropdown menu */
-.mobile-drawer .dropdown-menu {
-  display: flex;
-  flex-direction: column;
-  padding-left: 1rem;
-  margin-top: 0.5rem;
-}
-.mobile-drawer .dropdown-item {
-  color: black;
-  padding: 0.25rem 0;
-}
-.mobile-drawer .dropdown-item:hover {
-  color: #007bff;
-}
-
-/* Only show drawer on mobile */
-@media (min-width: 992px) {
-  .mobile-drawer { display: none; }
-}
-
 
 /***********************
  HIDE SIDEBAR ON DESKTOP

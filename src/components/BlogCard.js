@@ -29,7 +29,7 @@ export default function BlogCard({ blog }) {
           ))}
         </div>
 
-        <Link to={`/blog/${blog.id}`} className="btn btn-read">
+        <Link to={`/blog/${blog.id}`} className="btn-primary btn-read">
           Read More →
         </Link>
       </div>

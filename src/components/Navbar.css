@@ -37,23 +37,39 @@
 /***********************
  DROPDOWN MENU
 ************************/
+/***********************
+ IMPROVED DROPDOWN MENU
+************************/
 .dropdown-menu {
-  background: #1e293b;
+  background: #0f172a;         /* darker, matching navbar */
   padding: 10px 0;
-  border-radius: 8px;
-  border: 0;
+  border-radius: 10px;
+  border: 1px solid #1e293b;
   animation: fadeIn 0.3s ease;
+  overflow: hidden;
 }
 
+/* Dropdown Items */
 .dropdown-item {
-  color: #020202 !important;
+  color: #0d0d0d !important;
   padding: 10px 20px;
   font-size: 0.95rem;
+  transition: 0.25s ease;
 }
 
+/* Hover Effect */
 .dropdown-item:hover {
-  background: #6c737a;
-  color: #3588ee !important;
+  background: #1e293b !important;
+  color: #60a5fa !important;
+  padding-left: 26px;        /* subtle slide effect */
+}
+
+/* ACTIVE DROPDOWN ITEM (clicked or current route) */
+.dropdown-item.active,
+.dropdown-item.active:focus,
+.dropdown-item.active:hover {
+  background: #2563eb !important;  /* blue background */
+  color: white !important;
 }
 
 /***********************
